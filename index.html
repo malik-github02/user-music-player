@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="upload">
+            <label for="upload">Upload</label>
+            <input type="file" id="upload">
+        </div>
+        <audio id="audio"></audio>
+        <div class="interface">
+            <div class="buttons">
+                <button id="previous"><i class="fa-solid fa-backward"></i></button>
+                <button id="play"><i class="fa-solid fa-play"></i></button>
+                <button id="pause" class="hide"><i class="fa-solid fa-pause"></i></button>
+                <button id="next"><i class="fa-solid fa-forward"></i></button>
+            </div>
+            <input type="range" id="range" value="0" min="0" max="100">
+            <div class="time">
+                <span class="now">0:00</span>
+                <span class="all">0:00</span>
+            </div>
+            <div class="volume">
+                <i class="fa  fa-volume-up high"></i>
+                <i class="fa  fa-volume-off hide silence"></i>
+                <input type="range" id="volume" value="1" min="0" max="1" step="0.1">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

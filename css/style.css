@@ -1,0 +1,78 @@
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+}
+body {
+       font-family: Arial, Helvetica, sans-serif;
+       min-height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+.upload {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+.upload input#upload {
+       display: none;
+}
+.upload label {
+       background-color: #2196f3;
+       color: #fff;
+       padding: 10px 20px;
+       border-radius: 10px;
+       cursor: pointer;
+       font-size: 20px;
+}
+.interface {
+       background-color: #ccc;
+       width: 300px;
+       border-radius: 10px;
+       padding: 20px;
+       display: none;
+}
+.interface .buttons {
+       display: flex;
+       justify-content: space-between;
+       margin: 0 0 20px;
+}
+.interface .buttons button {
+       width: 50px;
+       height: 50px;
+       border: none;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #2196f3;
+       color: #fff;
+       border-radius: 50%;
+       cursor: pointer;
+       font-size: 20px;
+}
+.interface .buttons button.hide {
+       display: none;
+}
+.interface #range {
+       width: 100%;
+}
+.interface .time {
+       display: flex;
+       justify-content: space-between;
+       margin-top: 5px;
+}
+.interface .volume {
+       margin-top: 30px;
+       display: flex;
+       align-items: center;
+}
+.interface .volume .hide {
+       display: none;
+}
+.interface #volume {
+       width: 100px;
+       height: 3px;
+       margin-left: 10px;
+}
